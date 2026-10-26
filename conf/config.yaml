@@ -1,0 +1,21 @@
+defaults:
+  - model: mlp
+  - loss_fn: mseloss
+  - optimizer: adam
+  - lr_scheduler: steplr
+  - _self_
+
+env_id: CartPole-v1
+lr: 0.5
+gamma: 0.99
+sutton_barto_reward: true
+max_episode_size: 1000
+step_size_batch: 100
+max_episode_steps: 1000
+step_size_thres_succeeded: 950
+n_max_continuous_success: 10
+seed: 0
+
+display:
+  fname_gif: gif/CartPole_DQN
+  duration_gif: 20

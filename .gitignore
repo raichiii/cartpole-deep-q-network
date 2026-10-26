@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Hydra
+outputs/
+
+# Assets
+jpg/*
+!jpg/Loss_CartPole_DQN.example.jpg
+!jpg/StepSize_CartPole_DQN.example.jpg
+gif/*
+!gif/CartPole_DQN.example.gif
+video/*
+!video/rl-video-episode-0.example.mp4

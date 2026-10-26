@@ -1,0 +1,27 @@
+[project]
+name = "cartpole-deep-q-network"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "raichi", email = "kiichikawahata@gmail.com" }
+]
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "gymnasium[atari,classic-control,other]>=1.4.0",
+    "hydra-core>=1.3.7",
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "pygame>=2.6.1",
+    "swig>=4.5.0",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+cartpole-deep-q-network = "cartpole_deep_q_network:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
